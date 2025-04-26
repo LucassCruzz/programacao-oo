@@ -1,0 +1,60 @@
+/* ed01/Jogador.java */
+package ed01;
+
+/**
+ * Representa um jogador do jogo de adivinhação.
+ */
+public class Jogador {
+    private String nome;
+    private int tentativas;
+    private int pontuacao;
+
+    /**
+     * Construtor que define o nome do jogador.
+     * @param nome Nome do jogador
+     */
+    public Jogador(String nome) {
+        this.nome = nome;
+        this.tentativas = 0;
+        this.pontuacao = 0;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getTentativas() {
+        return tentativas;
+    }
+
+    public void setTentativas(int tentativas) {
+        this.tentativas = tentativas;
+    }
+
+    public int getPontuacao() {
+        return pontuacao;
+    }
+
+    public void setPontuacao(int pontuacao) {
+        this.pontuacao = pontuacao;
+    }
+
+    /**
+     * Incrementa em 1 o número de tentativas do jogador.
+     */
+    public void incrementarTentativas() {
+        this.tentativas++;
+    }
+
+    /**
+     * Atualiza a pontuação do jogador somando o valor informado.
+     * @param valor Pontuação a ser adicionada
+     */
+    public void atualizarPontuacao(int valor) {
+        this.pontuacao += valor;
+    }
+} 

@@ -1,0 +1,41 @@
+/* ed01/Jogo.java */
+package ed01;
+
+import java.util.Random;
+
+/**
+ * Controla a lógica do jogo de adivinhação.
+ */
+public class Jogo {
+    private Jogador jogador;
+    private int numeroSecreto;
+
+    /**
+     * Construtor que define o jogador e sorteia um número secreto.
+     * @param jogador Jogador da partida
+     */
+    public Jogo(Jogador jogador) {
+        this.jogador = jogador;
+        Random rand = new Random();
+        this.numeroSecreto = rand.nextInt(100) + 1;
+    }
+
+    /**
+     * Realiza uma tentativa e retorna o resultado.
+     * @param tentativa Número tentado pelo jogador
+     * @return Resultado da tentativa
+     */
+    public String jogar(int tentativa) {
+        jogador.incrementarTentativas();
+        if (tentativa < numeroSecreto) {
+            return "O número secreto é maior.";
+        } else if (tentativa > numeroSecreto) {
+            return "O número secreto é menor.";
+        } else {
+            int pontos = 100 - jogador.getTentativas() * 10;
+            if (pontos < 0) pontos = 0;
+            jogador.atualizarPontuacao(pontos);
+            return "Parabéns! Você acertou o número.";
+        }
+    }
+}

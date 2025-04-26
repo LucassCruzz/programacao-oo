@@ -1,0 +1,36 @@
+/* ed01/Placar.java */
+package ed01;
+
+import java.util.ArrayList;
+
+/**
+ * Armazena e exibe o ranking dos jogadores.
+ */
+public class Placar {
+    private ArrayList<Jogador> ranking;
+
+    /**
+     * Construtor padrão que inicializa a lista de jogadores.
+     */
+    public Placar() {
+        ranking = new ArrayList<>();
+    }
+
+    /**
+     * Adiciona um jogador ao ranking.
+     * @param j Jogador a ser adicionado
+     */
+    public void adicionarJogador(Jogador j) {
+        ranking.add(j);
+    }
+
+    /**
+     * Mostra o ranking de jogadores com nome e pontuação.
+     */
+    public void mostrarRanking() {
+        System.out.println("\n=== Ranking ===");
+        for (Jogador j : ranking) {
+            System.out.println(j.getNome() + " - Pontuação: " + j.getPontuacao());
+        }
+    }
+}
