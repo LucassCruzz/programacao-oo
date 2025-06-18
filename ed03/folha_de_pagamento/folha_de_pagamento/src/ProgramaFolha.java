@@ -2,7 +2,7 @@
  * A classe ProgramaFolha é a classe principal que demonstra a criação e o uso
  * de diferentes tipos de funcionários em um sistema de folha de pagamento.
  *
- * @author Seu Nome
+ * @author Lucas Henrique Cruz de Souza
  * @version 1.0
  * @since 2025-05-28
  */
