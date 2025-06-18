@@ -2,7 +2,7 @@
  * A classe Visitante representa um usuário com acesso restrito ao sistema.
  * Não implementa nenhuma interface de funcionalidade adicional.
  *
- * @author Seu Nome
+ * @author Lucas Henrique Cruz de Souza
  * @version 1.0
  * @since 2025-05-28
  */
