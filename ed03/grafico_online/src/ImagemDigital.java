@@ -2,7 +2,7 @@
  * A classe ImagemDigital representa uma imagem digital imprimível.
  * Implementa a interface Imprimivel para exibir seu nome de arquivo e resolução.
  *
- * @author Seu Nome
+ * @author Lucas Henrique Cruz de Souza
  * @version 1.0
  * @since 2025-05-28
  */
