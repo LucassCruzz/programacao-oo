@@ -2,7 +2,7 @@
  * A classe FuncionarioTemporario representa um funcionário com contrato temporário.
  * Este tipo de funcionário tem um desconto fixo em seu salário base.
  *
- * @author Seu Nome
+ * @author Lucas Henrique Cruz de Souza
  * @version 1.0
  * @since 2025-05-28
  */
