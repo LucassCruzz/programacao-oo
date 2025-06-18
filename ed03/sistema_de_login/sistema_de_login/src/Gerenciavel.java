@@ -1,7 +1,7 @@
 /**
  * A interface Gerenciavel define operações administrativas que podem ser realizadas em um usuário.
  *
- * @author Seu Nome
+ * @author Lucas Henrique Cruz de Souza
  * @version 1.0
  * @since 2025-05-28
  */
